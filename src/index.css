@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* EY Off Black (#2E2E38) as the base — hsl(240, 10%, 20%) */
+    --background: 240 10% 20%;
+    --surface: 240 10% 11%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 11%;
+    --card-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 10% 20%;
+    --secondary: 240 5% 26%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 5% 26%;
+    --muted-foreground: 240 4% 62%;
+    --accent: 240 5% 26%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5% 26%;
+    --input: 240 5% 26%;
+    --ring: 240 4.9% 83.9%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
